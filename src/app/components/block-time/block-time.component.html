@@ -1,0 +1,13 @@
+<div class="block-time">
+  <h3>Today`s forecast</h3>
+  <div class="block-time-all" *ngIf ="forecastData; else noInfo">
+    <div *ngFor="let data of forecastData" class="block">
+      <p>{{ data.time.slice(-5) }}</p>
+      <img src="http:{{ data.weatherIcon }}" alt="">
+      <h2>{{ data.temperature }}°</h2>
+    </div>
+  </div>
+</div>
+<ng-template #noInfo>
+  <div>no information...</div>
+  </ng-template>

@@ -1,0 +1,17 @@
+<div class="block-week">
+  <h3>7-day forecast</h3>
+  <div class="block-week-all" *ngIf ="forecastWeek; else noInfo">
+    <div class="block" *ngFor="let forecast of forecastWeek; index as i">
+      <h4>{{ forecast.date.slice(-5) }}</h4>
+      <div class="block-img">
+        <img src="http:{{ forecast.day.condition.icon }}" alt="">
+        <p>{{ forecast.day.condition.text }}</p>
+      </div>
+      <h4 class="h4">{{ roundToInteger(forecast.day.maxtemp_c) }}<span>/{{ roundToInteger(forecast.day.mintemp_c) }}</span></h4>
+    </div>
+    <div class="more-money">If you want more, pay</div>
+  </div>
+</div>
+<ng-template #noInfo>
+  <div></div>
+  </ng-template>

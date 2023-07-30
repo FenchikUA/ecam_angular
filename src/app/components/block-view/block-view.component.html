@@ -1,0 +1,50 @@
+<div class="block-view">
+  <div class="block-view-top">
+    <h3>Air condition</h3>
+    <button>See more</button>
+  </div>
+  <div class="block-view-main">
+    <div class="block-feel">
+      <i class="fa-solid fa-temperature-half"></i>
+      <div class="real">
+        <p>Real Feel</p>
+        <h2>{{checkWeather?.feelslike_c || ''}}°C</h2>
+      </div>
+    </div>
+    <div class="block-feel">
+      <i class="fa-solid fa-wind"></i>
+      <div class="real">
+        <p>Wind</p>
+        <h2>{{checkWeather?.wind_mph || ''}} km/h</h2>
+      </div>
+    </div>
+    <div class="block-feel">
+      <i class="fa-solid fa-droplet"></i>
+      <div class="real">
+        <p>Humidity</p>
+        <h2>{{checkWeather?.humidity || ''}}%</h2>
+      </div>
+    </div>
+    <div class="block-feel">
+      <i class="fa-solid fa-sun"></i>
+      <div class="real">
+        <p>UV Index</p>
+        <h2>{{checkWeather?.uv || '-'}}</h2>
+      </div>
+    </div>
+    <div class="block-feel">
+      <i class="fa-solid fa-moon"></i>
+      <div class="real">
+        <p>Moonrise</p>
+        <h2>{{sunMun?.moonrise || '-'}}</h2>
+      </div>
+    </div>
+    <div class="block-feel">
+      <i class="fa-regular fa-sun"></i>
+      <div class="real">
+        <p>Sunrise</p>
+        <h2>{{sunMun?.sunrise || '-'}}</h2>
+      </div>
+    </div>
+  </div>
+</div>

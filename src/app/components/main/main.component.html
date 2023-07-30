@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="block-main-left">
+    <div class="block-main-name-all">
+      <div class="block-main-name">
+        {{ currentWeather?.name || 'N/A' }}
+      </div>
+      <div class="block-main-bottom">
+        {{checkWeather?.condition.text || '' }}
+      </div>
+    </div>
+    <div class="block-main-temperature">
+      {{ roundToInteger(checkWeather?.temp_c) || '-' }}°
+    </div>
+  </div>
+  <div class="block-main-right">
+    <img src="assets/img/{{checkWeather?.condition.text}}.png" alt="">
+  </div>
+</div>

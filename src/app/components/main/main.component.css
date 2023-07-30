@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-main-left {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-main-name {
+  color: #e5e7ea;
+  font-size: 60px;
+}
+
+.block-main-bottom {
+  color: #505762;
+  font-size: 24px;
+}
+
+.block-main-temperature {
+  color: #e5e7ea;
+  font-weight: bold;
+  font-size: 80px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.block-main-right {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.block-main-right img {
+  display: block;
+  width: 110%;
+}
